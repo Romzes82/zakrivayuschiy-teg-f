@@ -23,6 +23,9 @@
   /* font-size: var(--font-size); */
   font-size: 18px;
   background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  background-size: cover;
 
   min-inline-size: 320px;
   min-block-size: 100dvb;
