@@ -6,6 +6,8 @@
 */
 
 :root.theme-light {
+    --main-font-weight:  "wght" 400;
+    --main-font-bold-weight: "wght" 700;    
     --main-text-color: #000;
     --bg-color: #fff;
     --bg-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
