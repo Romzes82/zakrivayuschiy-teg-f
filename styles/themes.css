@@ -19,6 +19,7 @@
 :root.theme-dark {
     --main-font-weight: "wght" 465;
     --main-font-bold-weight: "wght" 785;
+    --main-font-weight-accent: "wght" 400;
     --main-text-color: #00cc14;
     --bg-color: #000;
     --bg-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
@@ -32,6 +33,7 @@
     :root {
         --main-font-weight: "wght" 465;
         --main-font-bold-weight: "wght" 785;
+        --main-font-weight-accent: "wght" 400;
         --main-text-color: #00cc14;
         --bg-color: #000;
         --bg-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),

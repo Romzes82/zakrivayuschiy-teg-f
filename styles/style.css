@@ -173,17 +173,9 @@
   opacity: 0.5;
   color: var(--main-text-color);
   font-family: var(--accent-font), sans-serif;
-  font-weight: 400;
+  font-variation-settings: var(--main-font-weight-accent);
   font-size: 14px;
-  /* text-shadow:
-    1px 0 0 var(--bg-color),
-    1px 0 0 var(--bg-color,
-    0 1px 0 var(--bg-color),
-    0 1px 0 var(--bg-color),
-    -1px 0 0 var(--bg-color),
-    -1px 0 0 var(--bg-color),
-    0 -1px 0 var(--bg-color),
-    0 -1px 0 var(--bg-color); */
+  text-shadow: 1px 1px var(--shadow-text-color), -1px 1px var(--shadow-text-color), -1px -1px var(--shadow-text-color), 1px -1px var(--shadow-text-color);
   mix-blend-mode: hard-light;
   /* inset-inline-end: 10px;
   inset-block-start: 20px; */
@@ -191,7 +183,15 @@
   inset-block-start: clamp(1.4375rem, 1.3495rem + 0.3756vw, 1.6875rem);
 }
 
-@supports (
+@supports ((text-stroke: 1px var(--shadow-text-color)) or (-webkit-text-stroke: 1px var(--shadow-text-color))) {
+  .card__img-label {
+      -webkit-text-stroke: 1px var(--shadow-text-color);
+      text-stroke: 1px var(--shadow-text-color);
+      text-shadow: none;
+  }
+}
+
+/* @supports (
   (text-stroke: 1px var(--shadow-text-color)) or
     (-webkit-text-stroke: 1px var(--shadow-text-color))
 ) {
@@ -199,7 +199,7 @@
     text-shadow: none;
     -webkit-text-stroke: 1px var(--shadow-text-color);
   }
-}
+} */
 
 /* @supports ( (text-stroke: 1px var(--shadow-text-color)) or (-webkit-text-stroke: 1px var(--shadow-text-color)) )
 .card__img-label {
