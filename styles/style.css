@@ -246,22 +246,61 @@
   padding: 25px 25px 25px;
 }
 
+/* .button {
+
+} */
+
+
 .card__like-button {
+  position: relative;
   padding: 9px 17px;
   min-inline-size: 130px;
   min-block-size: 38px;
 }
 
 .button__main {
-  overflow: hidden;
-  position: relative;
+  /* overflow: hidden; */
+  /* position: relative; */
   border: 2px solid var(--main-text-color);
   transition: box-shadow 0.3s ease;
+  background: transparent;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 0.9;
 }
 
 .button__text {
   position: relative;
   color: var(--button-hover-color);
-  /* mix-blend-mode: difference; */
+  mix-blend-mode: difference;
   z-index: 1;
+}
+
+.card__like-button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--main-text-color);
+}
+
+.card__like-button::before {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+.card__like-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.card__like-button::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: var(--main-text-color, #000000);
+  transition: transform 0.5s ease;
+}
+
+.card__icon-button {
+  border: none;
+  background: transparent;
 }
