@@ -345,23 +345,47 @@
   transition: 0.1s linear;
 }
 
-/* .card__icon:hover {
-  .like-icon__core {
-    fill: var(--heart-contour-color);
-    transition: fill 0.3s linear;
-  }
-  .like-icon__main-body {
-    fill: var(--heart-contour-color);
-    transition: fill 0.3s ease  0.05s;;
-  }
+.like-icon:active .like-icon__core {
+  fill: var(--heart-fill-color, #FF0000);
+  transition: fill 0.3s linear;  
 }
 
-.like-icon .main-body {
-  fill: var(--page-background-color, #ffffff);
-  transition: fill 0.3s linear;
+.like-icon:active .like-icon__main-body {
+  fill: var(--heart-fill-color, #FF0000);
+  /* transition: fill 1.3s linear 0.05s; */
+  transition: fill 0.3s 0.05s linear;
 }
 
-.like-icon:hover .core {
-  fill: var(--heart-contour-color, #000000);
-  transition: fill 0.3s linear;
-} */
+/* .like-icon.is-liked .like-icon__core {
+  fill: var(--heart-fill-color, #FF0000);
+  transition: fill 0.3s 0.03s linear;
+}
+*/
+
+
+.like-icon.is-liked .like-icon__core {
+  fill: var(--heart-fill-color, #FF0000);
+  transition: fill 0.3s linear;  
+}
+
+.like-icon.is-liked .like-icon__main-body {
+  fill: var(--heart-fill-color, #FF0000);
+  /* transition: fill 1.3s linear 0.05s; */
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .like-icon__contour {
+  fill: var(--heart-fill-color, #FF0000);
+  /* transition: fill 1.3s linear 0.05s; */
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .like-icon__heart {
+  transform-origin: center;
+  animation: scaling-heard 0.3s 0.1s ease-in alternate 1;
+} 
+
+.like-icon.is-liked .like-icon__sparks {
+  transform-origin: center;
+  animation: sparking 0.3s 0.3s ease-in alternate 1;
+} 
