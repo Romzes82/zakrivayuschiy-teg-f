@@ -158,6 +158,11 @@
   width: 100%;
 }
 
+.cards-list {
+  display: grid;
+  gap: 54px;
+}
+
 .cards-list__item {
   display: grid;
   border: 2px solid var(--main-text-color);
@@ -184,6 +189,7 @@
   position: relative;
   border-block-start: 2px solid var(--main-text-color);
   border-block-end: 2px solid var(--main-text-color);
+  /* box-shadow: inset 0px 0px 40px rgba(0,0,0,0.9); */
 
   /* outline: 2px solid var(--main-text-color); */
   /* outline-offset: -1px; */
@@ -389,3 +395,79 @@
   transform-origin: center;
   animation: sparking 0.3s 0.3s ease-in alternate 1;
 } 
+
+
+.card__img-filter-brightness-invert-grayscale {
+  filter: brightness(2) invert(1) grayscale(1);
+}
+
+.card__img-filter-brightness {
+  filter: brightness(42%);
+  /* filter: blur(0.2rem); */
+}
+
+.card__img-filter-saturate {
+  filter: saturate(800%);
+}
+
+.card__img-filter-hue-rotate {
+  filter: hue-rotate(-90deg);
+}
+
+.card__img-filter-sepia {
+  filter: sepia(80%);
+}
+
+.card__img-filter-sepia-contrast-brightness {
+  filter: sepia(1) contrast(2) brightness(200%);
+}
+
+.card__img-filter-invert_brightness_saturate_hue-rotates {
+  filter: invert(0.1) brightness(150%) saturate(60%) hue-rotate(870deg);
+}
+
+/* .card__img-filter-contrast-saturate-brightness {
+  filter: contrast(20%) saturate(800%) brightness(150%);
+  box-shadow: inset 0 0 30px 30px rgba(0, 0, 0, 0.9);
+  position: absolute;
+  z-index: 2;
+} */
+
+.card__img-filter-contrast-saturate-brightness {
+  /* position: absolute; */
+  filter: contrast(125%) saturate(150%) brightness(320%);
+  opacity: 0.8;
+  box-shadow: 0 0 100px 30px #3F51B5 inset;
+  z-index: -2;
+}
+
+.card__img-wrapper::after {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(var(--gradient-for-label) / 1),
+    rgb(var(--gradient-for-label) / 0.6) 5%,
+    rgb(var(--gradient-for-label) / 0) 25%,
+    rgb(var(--gradient-for-label) / 0) 100%
+  ); 
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.footer {
+  margin-bottom: 102px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+
+/* .save__button-svg {
+  position: relative;
+  z-index: 1;
+  inline-size: 28px;
+  block-size: 28px;
+  mix-blend-mode: difference;
+} */
