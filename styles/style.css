@@ -189,10 +189,6 @@
   position: relative;
   border-block-start: 2px solid var(--main-text-color);
   border-block-end: 2px solid var(--main-text-color);
-  /* box-shadow: inset 0px 0px 40px rgba(0,0,0,0.9); */
-
-  /* outline: 2px solid var(--main-text-color); */
-  /* outline-offset: -1px; */
 }
 
 .card__img-label {
