@@ -22,6 +22,7 @@
     --heart-fill-color: #FF0000;
     --url-photo: url(./images/photo-road.jpg);
     --gradient-for-label: 0 0 0;
+    --svg-floppy-color: #fff;
       /* repeating-linear-gradient(
         90deg, transparent
         #d3d3d3 0 2px,

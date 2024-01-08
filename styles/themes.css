@@ -16,7 +16,8 @@
     --shadow-text-color: #fff;
     --button-hover-color: #fff;
     --heart-contour-color: #000;   
-    --gradient-for-label: 0 0 0;            
+    --gradient-for-label: 0 0 0;   
+    --svg-floppy-color: #fff;         
 }
 
 :root.theme-dark {
@@ -32,6 +33,7 @@
     --button-hover-color: #00cc14;
     --heart-contour-color: #00cc14;   
     --gradient-for-label: 255 255 255;  
+    --svg-floppy-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,7 +50,8 @@
         --shadow-text-color: #000;
         --button-hover-color: #00cc14;    
         --heart-contour-color: #00cc14;  
-        --gradient-for-label: 255 255 255;        
+        --gradient-for-label: 255 255 255;    
+        --svg-floppy-color: #00cc14;  
     }  
 
 }    

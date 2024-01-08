@@ -461,13 +461,98 @@
   margin-bottom: 102px;
   display: flex;
   justify-content: center;
+  /* background-color: var(--bg-color);   */
+  /* background-color: transparent; */
+}
+
+.save__button-svg {
+  position: relative;
+  z-index: 1;
+  inline-size: 21px;
+  block-size: 21px;
+  mix-blend-mode: difference;
+}
+
+.footer__save-button {
+  display: flex;
+  /* margin: 0 0 102px; */
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  /* display: flex; */
+  gap: 8px;
+  padding: 15px 20px;
+  color: var(--svg-floppy-color);
   background-color: var(--bg-color);
 }
 
-/* .save__button-svg {
+/* .footer__button {
   position: relative;
-  z-index: 1;
-  inline-size: 28px;
-  block-size: 28px;
-  mix-blend-mode: difference;
+  padding: 9px 17px;
+  min-inline-size: 130px;
+  min-block-size: 38px;
+  background-color: var(--bg-color);
 } */
+
+/* диалоговое окно */
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  font-family: var(--accent-font);
+  padding: 30px;
+  gap: 30px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-text-color);
+  color: var(--main-text-color);
+  inline-size: 341px;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dialog::backdrop {
+  background-color: #000;
+  opacity: 0.75;
+}
+
+.dialog[open] {
+  display: grid;
+}
+
+.dialog:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.dialog__text {
+  display: grid;
+  grid-template-columns: 39px 1fr;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.dialog__svg {
+  inline-size: 39px;
+  block-size: 39px;
+  mix-blend-mode: normal;
+}
+
+.dialog__button {
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 9px 17px;
+  line-height: 90%;
+  inline-size: 100%;
+}
+
+@media (width < 1024px) {
+
+  .footer__save-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
