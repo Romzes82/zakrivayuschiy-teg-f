@@ -31,6 +31,7 @@
   max-inline-size: 696px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  overflow-x: hidden;
 }
 
 .header {
@@ -483,16 +484,6 @@
   color: var(--svg-floppy-color);
   background-color: var(--bg-color);
 }
-
-/* .footer__button {
-  position: relative;
-  padding: 9px 17px;
-  min-inline-size: 130px;
-  min-block-size: 38px;
-  background-color: var(--bg-color);
-} */
-
-/* диалоговое окно */
 
 .dialog {
   position: fixed;
