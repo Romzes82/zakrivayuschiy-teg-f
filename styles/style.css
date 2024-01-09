@@ -26,12 +26,13 @@
   background-image: var(--bg-image);
   background-attachment: fixed;
   background-size: cover;
-  /* Viewport Range min 375, max 1440; Target Values min 371, max 696. */
-  inline-size: clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem);
+  /* Viewport Range min 375/320, max 1440; Target Values min 371, max 696. */
+  /* inline-size: clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem); */
+  inline-size: clamp(20rem, -59.908rem + 344.615vw, 90rem);
   max-inline-size: 696px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .header {
