@@ -26,9 +26,12 @@
   background-image: var(--bg-image);
   background-attachment: fixed;
   background-size: cover;
-  /* Viewport Range min 375/320, max 1440; Target Values min 371, max 696. */
+  /* Viewport Range min 375, max 1440; Target Values min 371, max 696. */
   /* inline-size: clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem); */
-  inline-size: clamp(20rem, -59.908rem + 344.615vw, 90rem);
+  /* inline-size: clamp(23.188rem, 17.384rem + 29.018vw, 43.5rem); */
+  /* Viewport Range min 320, max 1440; Target Values min 320-6, max 696. */
+  inline-size: clamp(19.625rem, 12.804rem + 34.107vw, 43.5rem);
+  
   max-inline-size: 696px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -55,7 +58,9 @@
 .header__title-accent {
   /* font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); */
   /* Viewport Range min 375, max 1440; Target Values min 49, max 65. */
-  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  /* font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem); */
+  /* font-size: clamp(3.063rem, 2.777rem + 1.429vw, 4.063rem); */
+  font-size: clamp(2.813rem, 2.455rem + 1.786vw, 4.063rem);
 }
 
 .header__title {
@@ -496,7 +501,9 @@
   background-color: var(--bg-color);
   border: 2px solid var(--main-text-color);
   color: var(--main-text-color);
-  inline-size: 357px;
+  /* inline-size: 357px; */
+  inline-size: clamp(18.5rem, 17.411rem + 5.446vw, 22.313rem);
+
   text-transform: uppercase;
   transition: opacity 0.3s ease-in-out;
 }
@@ -546,8 +553,21 @@
     flex-direction: column;
   }
 
-  .dialog {
+  /* .dialog {
     inline-size: 341px;
-  }
+  } */
 
 }
+
+/* 
+@media (width <= 375px) {
+.header__title-accent {
+   Viewport Range min 320, max 375; Target Values min 40, max 49. 
+  font-size: clamp(1.875rem, -5.034rem + 34.545vw, 3.063rem)
+
+}
+.page {
+     Viewport Range min 320, max 375; Target Values min 320, max 375. 
+   inline-size:  clamp(20rem, 0rem + 100vw, 23.438rem); 
+}
+} */
