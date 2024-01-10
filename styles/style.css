@@ -130,10 +130,8 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin: 102px auto;
+  margin: 0 auto;
   max-inline-size: 696px;
-  /* margin: 0px auto; */
-  /* inline-size: clamp(18.438rem, 11.759rem + 35.268vw, 43.5rem); */
 }
 
 .card-list__item {
@@ -144,7 +142,7 @@
   border: 2px solid var(--main-border-color);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-family: var(--sub-font-family);
-  max-width: 696px;
+  /* max-width: 696px; */
   width: 100%;
 }
 
@@ -352,13 +350,6 @@
   transition: fill 0.3s 0.05s linear;
 }
 
-/* .like-icon.is-liked .like-icon__core {
-  fill: var(--heart-fill-color, #FF0000);
-  transition: fill 0.3s 0.03s linear;
-}
-*/
-
-
 .like-icon.is-liked .like-icon__core {
   fill: var(--heart-fill-color, #FF0000);
   transition: fill 0.3s linear;
@@ -393,7 +384,6 @@
 
 .card__img-filter-brightness {
   filter: brightness(42%);
-  /* filter: blur(0.2rem); */
 }
 
 .card__img-filter-saturate {
@@ -416,15 +406,7 @@
   filter: invert(0.1) brightness(150%) saturate(60%) hue-rotate(870deg);
 }
 
-/* .card__img-filter-contrast-saturate-brightness {
-  filter: contrast(20%) saturate(800%) brightness(150%);
-  box-shadow: inset 0 0 30px 30px rgba(0, 0, 0, 0.9);
-  position: absolute;
-  z-index: 2;
-} */
-
 .card__img-filter-contrast-saturate-brightness {
-  /* position: absolute; */
   filter: contrast(125%) saturate(150%) brightness(320%);
   opacity: 0.8;
   box-shadow: 0 0 100px 30px #3F51B5 inset;
@@ -451,8 +433,6 @@
   margin-bottom: 102px;
   display: flex;
   justify-content: center;
-  /* background-color: var(--bg-color);   */
-  /* background-color: transparent; */
 }
 
 .save__button-svg {
@@ -465,11 +445,9 @@
 
 .footer__save-button {
   display: flex;
-  /* margin: 0 0 102px; */
   flex-direction: row;
   align-items: center;
   text-align: center;
-  /* display: flex; */
   gap: 8px;
   padding: 15px 20px;
   color: var(--svg-floppy-color);
@@ -486,9 +464,7 @@
   background-color: var(--bg-color);
   border: 2px solid var(--main-text-color);
   color: var(--main-text-color);
-  /* inline-size: 357px; */
   inline-size: clamp(18.5rem, 17.411rem + 5.446vw, 22.313rem);
-
   text-transform: uppercase;
   transition: opacity 0.3s ease-in-out;
 }
@@ -544,11 +520,11 @@
 
 }
 
-@media (width <= 476px) {
+/* @media (width <= 480px) {
   .page {
       min-height: 100vh;
   }
-}
+} */
 
 /* 
 @media (width <= 375px) {
