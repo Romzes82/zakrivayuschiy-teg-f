@@ -1,3 +1,3 @@
-# posmotri_v_okno  
-Проект "Закрытый тег"
+# zakrivayuschiy-teg-f  
+Проект "Закрывающий тег"
 https://github.com/Romzes82/zakrivayuschiy-teg-f
