@@ -35,20 +35,21 @@
  /* Viewport Range min 320-17=303, max 1440; Target Values min 320-17-4=299, max 696. */
   /* inline-size: clamp(18.438rem, 11.759rem + 35.268vw, 43.5rem); */
 
-  
+
   max-inline-size: 696px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   display: grid;
-
+  width: 100%;
   /* overflow-x: hidden; */
 }
 
 
 .header {
   /* margin: 102px 0; */
-    margin: 102px auto;
-    inline-size: clamp(18.438rem, 11.759rem + 35.268vw, 43.5rem);
+    /* margin: 102px auto; */
+    /* Viewport Range min 320-17=303, max 1440; Target Values min 320-17-4=299, max 696. */
+    /* inline-size: clamp(18.438rem, 11.759rem + 35.268vw, 43.5rem); */
   border: 2px solid var(--main-text-color);
   /* Viewport Range min 667, max 690; Target Values min 120, max 136. */
   padding: clamp(7.5rem, 5.224rem + 5.461vw, 8.5rem) 0 25px;
@@ -72,6 +73,7 @@
   /* font-size: clamp(2.813rem, 2.455rem + 1.786vw, 4.063rem); */
    /* Viewport Range min 303, max 1440; Target Values min 40, max 65. */
   font-size: clamp(2.5rem, 2.084rem + 2.199vw, 4.063rem);
+  
 }
 
 .header__title {
@@ -162,8 +164,8 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin: 0px auto;
-  inline-size: clamp(18.438rem, 11.759rem + 35.268vw, 43.5rem);
+  /* margin: 0px auto; */
+  /* inline-size: clamp(18.438rem, 11.759rem + 35.268vw, 43.5rem); */
 }
 
 .card-list__item {
