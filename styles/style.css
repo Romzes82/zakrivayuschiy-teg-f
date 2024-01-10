@@ -49,8 +49,6 @@
 
 .header {
   margin: 102px auto;
-    /* Viewport Range min 320-17=303, max 1440; Target Values min 320-17-4=299, max 696. */
-    /* inline-size: clamp(18.438rem, 11.759rem + 35.268vw, 43.5rem); */
   max-inline-size: 696px;
   border: 2px solid var(--main-text-color);
   /* padding: clamp(7.5rem, 5.224rem + 5.461vw, 8.5rem) 0 25px; */
@@ -68,6 +66,7 @@
 }
 
 .header__title-accent {
+
   /* Viewport Range min 375, max 1440; Target Values min 49, max 65. */  
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
 }
@@ -160,6 +159,8 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
+  margin: 102px auto;
+  max-inline-size: 696px;
   /* margin: 0px auto; */
   /* inline-size: clamp(18.438rem, 11.759rem + 35.268vw, 43.5rem); */
 }
