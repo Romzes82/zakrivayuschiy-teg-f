@@ -16,13 +16,10 @@
 
 @keyframes moving-triangle {
     from {
-      /* transform: translateX(0%); */
       transform: translateX(-4px);
-      /* inset-inline-start: -17px; */
     }
   
     to {
-      /* transform: translateX(20%); */
       transform: translateX(0px);
     }
   }

@@ -91,7 +91,6 @@
   block-size: 2px;
 }
 
-
 .theme-menu__button:focus-visible::after {
   transform: scaleX(1);
 }
@@ -142,7 +141,6 @@
   border: 2px solid var(--main-border-color);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-family: var(--sub-font-family);
-  /* max-width: 696px; */
   width: 100%;
 }
 
@@ -159,7 +157,6 @@
 }
 
 .card__title {
-  /* border-block-end: 2px solid var(--main-text-color); */
   padding: 4px 10px 8px;
   font-variation-settings: "wght" var(--main-font-bold-weight);
   
@@ -190,8 +187,6 @@
   font-size: 14px;
   text-shadow: 1px 1px var(--shadow-text-color), -1px 1px var(--shadow-text-color), -1px -1px var(--shadow-text-color), 1px -1px var(--shadow-text-color);
   mix-blend-mode: hard-light;
-  /* inset-inline-end: 10px;
-  inset-block-start: 20px; */
   inset-inline-end: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
   inset-block-start: clamp(1.4375rem, 1.3495rem + 0.3756vw, 1.6875rem);
 }
@@ -203,24 +198,6 @@
       text-shadow: none;
   }
 }
-
-/* @supports (
-  (text-stroke: 1px var(--shadow-text-color)) or
-    (-webkit-text-stroke: 1px var(--shadow-text-color))
-) {
-  .card__img-label {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--shadow-text-color);
-  }
-} */
-
-/* @supports ( (text-stroke: 1px var(--shadow-text-color)) or (-webkit-text-stroke: 1px var(--shadow-text-color)) )
-.card__img-label {
-    -webkit-text-stroke: 1px var(--shadow-text-color);
-    text-stroke: 1px var(--shadow-text-color);
-    text-shadow: none;
-} */
-
 
 .card__content {
   display: grid;
@@ -237,20 +214,12 @@
   padding: 25px 25px 25px;
 }
 
-/* .button {
-
-} */
-
-
 .card__like-button {
-  /* position: relative; */
   padding: 9px 17px;
   min-inline-size: 130px;
-  /* min-block-size: 38px; */
 }
 
 .button__with_fill {
-  /* overflow: hidden; */
   position: relative;
   border: 2px solid var(--main-text-color);
   transition: box-shadow 0.3s ease;
@@ -272,11 +241,6 @@
   outline: none;
   box-shadow: 2px 2px 0 0 var(--main-text-color);
 }
-
-/* .button__with_fill::before {
-  transform: scaleX(0);
-  transform-origin: bottom left;
-} */
 
 .button__with_fill:hover::before {
   transform: scaleX(1);
@@ -330,7 +294,6 @@
 
 .like-icon:hover .like-icon__main-body {
   fill: var(--heart-contour-color, #000000);
-  /* transition: fill 1.3s linear 0.05s; */
   transition: fill 0.3s 0.05s linear;
 }
 
@@ -346,7 +309,6 @@
 
 .like-icon:active .like-icon__main-body {
   fill: var(--heart-fill-color, #FF0000);
-  /* transition: fill 1.3s linear 0.05s; */
   transition: fill 0.3s 0.05s linear;
 }
 
@@ -413,6 +375,7 @@
   z-index: -2;
 }
 
+/* линейный градиент для акцента сливающегося с фоном лейбла в светлой и темной темах */
 .card__img-wrapper::after {
   content: '';
   position: absolute;
@@ -514,27 +477,4 @@
     flex-direction: column;
   }
 
-  /* .dialog {
-    inline-size: 341px;
-  } */
-
 }
-
-/* @media (width <= 480px) {
-  .page {
-      min-height: 100vh;
-  }
-} */
-
-/* 
-@media (width <= 375px) {
-.header__title-accent {
-   Viewport Range min 320, max 375; Target Values min 40, max 49. 
-  font-size: clamp(1.875rem, -5.034rem + 34.545vw, 3.063rem)
-
-}
-.page {
-     Viewport Range min 320, max 375; Target Values min 320, max 375. 
-   inline-size:  clamp(20rem, 0rem + 100vw, 23.438rem); 
-}
-} */
