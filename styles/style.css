@@ -36,7 +36,7 @@
   /* inline-size: clamp(18.438rem, 11.759rem + 35.268vw, 43.5rem); */
 
 
-  max-inline-size: 696px;
+  /* max-inline-size: 696px; */
   min-inline-size: 320px;
   min-block-size: 100dvb;
   /* display: grid; */
