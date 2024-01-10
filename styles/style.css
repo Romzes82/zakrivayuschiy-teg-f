@@ -39,7 +39,7 @@
   max-inline-size: 696px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  display: grid;
+  /* display: grid; */
   width: 100%;
   /* overflow-x: hidden; */
 }
