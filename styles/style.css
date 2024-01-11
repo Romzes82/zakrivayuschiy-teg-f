@@ -16,9 +16,9 @@
 
 .page {
   color: var(--main-text-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font, sans-serif);
   font-variation-settings: "wght" var(--main-font-weight);
-  font-size: 18px;
+  font-size: var(--font-size);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-attachment: fixed;
@@ -28,30 +28,32 @@
   min-block-size: 100dvb;
 }
 
+.max_inline_size {
+  max-inline-size: clamp(371px, 100vw, 696px);
+  margin: 0 auto
+}
 
 .header {
   margin: 102px auto 104px auto;
-  max-inline-size: 696px;
+  /* max-inline-size: clamp(371px, 100vw, 696px); */
   border: 2px solid var(--main-text-color);
   /* Viewport Range min 375, max 1440; Target Values min 120, max 136. */
   padding: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem) 0 25px;
   display: grid;
   gap: 25px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   background-color: var(--bg-color);
 }
 
-.header__title-accent {
+  .header__logo {
   /* Viewport Range min 375, max 1440; Target Values min 49, max 65. */
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
 }
 
 .header__title {
-  display: grid;
-  gap: 20px;
   /* Viewport Range min 375, max 1440; Target Values min 14, max 23. */
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   font-weight: 400;
@@ -129,8 +131,8 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin: 0 auto;
-  max-inline-size: 696px;
+  /* margin: 0 auto;
+  max-inline-size: 696px; */
 }
 
 .card-list__item {
@@ -182,7 +184,7 @@
   z-index: 1;
   opacity: 0.5;
   color: var(--main-text-color);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font, fantasy);
   font-variation-settings: "wght" var(--main-font-weight-accent);
   font-size: 14px;
   text-shadow: 1px 1px var(--shadow-text-color), -1px 1px var(--shadow-text-color), -1px -1px var(--shadow-text-color), 1px -1px var(--shadow-text-color);
@@ -224,7 +226,7 @@
   border: 2px solid var(--main-text-color);
   transition: box-shadow 0.3s ease;
   background: transparent;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   font-size: 14px;
   line-height: 0.9;
   min-block-size: 38px;
@@ -392,11 +394,11 @@
   block-size: 100%;
 }
 
-.footer {
+/* .footer {
   margin-bottom: 102px;
   display: flex;
   justify-content: center;
-}
+} */
 
 .save__button-svg {
   position: relative;
@@ -406,8 +408,14 @@
   mix-blend-mode: difference;
 }
 
-.footer__save-button {
+/* .footer__save-button { */
+.save-button {   
   display: flex;
+  
+  margin-bottom: 102px;
+  display: flex;
+  justify-content: center;
+
   flex-direction: row;
   align-items: center;
   text-align: center;
@@ -421,7 +429,7 @@
   position: fixed;
   z-index: 1;
   inset: 0;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   padding: 30px;
   gap: 30px;
   background-color: var(--bg-color);

@@ -13,7 +13,7 @@
     --bg-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
                 repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
                 linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-    --shadow-text-color: #fff;
+    --shadow-text-color: var(--bg-color);
     --button-hover-color: #fff;
     --heart-contour-color: #000;
     --gradient-for-label: 0 0 0;
@@ -29,7 +29,7 @@
     --bg-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
                 repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
                 linear-gradient(to bottom, #007f0c 0%, #004306 100%);
-    --shadow-text-color: #000;
+    --shadow-text-color: var(--bg-color);
     --button-hover-color: #00cc14;
     --heart-contour-color: #00cc14;
     --gradient-for-label: 255 255 255;
@@ -47,7 +47,7 @@
         --bg-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
                     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
                     linear-gradient(to bottom, #007f0c 0%, #004306 100%);
-        --shadow-text-color: #000;
+        --shadow-text-color: var(--bg-color);
         --button-hover-color: #00cc14;
         --heart-contour-color: #00cc14;
         --gradient-for-label: 255 255 255;
