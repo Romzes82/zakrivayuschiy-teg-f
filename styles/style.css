@@ -316,10 +316,9 @@
   mix-blend-mode: difference;
 }
 
-.save-button {   
+.save-button {
   display: flex;
   margin: 0 auto 102px ;
-  display: flex;
   justify-content: center;
   inline-size: 335px;
   block-size: 51px;
