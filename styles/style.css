@@ -206,7 +206,7 @@
 .card__footer {
   display: flex;
   justify-content: end;
-  padding: 25px 25px 20px;
+  padding: 0 25px 20px;
 }
 
 .card__like-button {
